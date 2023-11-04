@@ -1,0 +1,136 @@
+@import "../../../styles/variable";
+
+::ng-deep .mat-nav-list {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+:host {
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+}
+
+.logo {
+  text-align: center;
+  padding: 2.5rem 1rem;
+
+  img {
+    width: 200px;
+  }
+}
+
+.logo-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 30px 0;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-btn {
+  margin-right: 15px;
+}
+
+.mat-list-item {
+  color: #ffffff !important;
+  font-size: 0.8rem;
+  height: 44px !important;
+  margin-bottom: 4px;
+  border-radius: 1rem;
+
+  &:hover {
+    color: #f2f5f7 !important;
+  }
+}
+
+.list-item-active {
+  position: relative;
+  background: rgba(255, 255, 255, 0.443) !important;
+  border-radius: 0.8rem;
+  color: #ffffff !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    background-color: white;
+    height: 50%;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+}
+
+.mat-expansion-panel {
+  background: none;
+  box-shadow: none;
+  border-radius: 1rem;
+
+  &hover {
+    background: none;
+  }
+}
+
+.mat-expansion-panel-header {
+  padding: 0 20px;
+}
+
+.expanel-item {
+  color: #ffffff !important;
+  font-size: 0.8rem;
+  height: 44px !important;
+  margin-bottom: 4px;
+  border-radius: 1rem;
+}
+
+::ng-deep .mat-expansion-indicator::after {
+  color: #ffffff;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 !important;
+}
+
+mat-toolbar-row {
+  background-color: white;
+  font-size: 14px;
+  height: 54px !important;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 54px !important;
+}
+
+:host::ng-deep .mat-menu-panel {
+  max-width: none;
+  min-width: 264px !important;
+  border-radius: 10px !important;
+
+  .mat-menu-item {
+    color: #003c53;
+    font-size: 11pt;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #f3f5f7;
+    }
+  }
+}
