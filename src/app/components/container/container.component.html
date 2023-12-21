@@ -15,6 +15,15 @@
         <mat-icon mat-list-icon>home</mat-icon>
         Home
       </a>
+      <a
+        mat-list-item
+        routerLink="/users"
+        routerLinkActive="list-item-active"
+        (click)="onClickMenu()"
+      >
+        <mat-icon mat-list-icon>group</mat-icon>
+        Users
+      </a>
       <mat-expansion-panel [expanded]="false">
         <mat-expansion-panel-header>
           <mat-panel-title style="color: #fff">
