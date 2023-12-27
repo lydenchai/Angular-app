@@ -10,18 +10,10 @@ export class ContainerComponent {
   desktopViewWidth: number = 1100;
   drawerMode: "side" | "over" = "side";
   @HostListener("window:resize", ["$event.target.innerWidth"])
-  onResize(width: number) {
-    if (width < this.desktopViewWidth) {
-      this.drawerMode = "over";
-      if (this.sideBarOpen) {
-        this.sideBarOpen = false;
-      }
-    } else {
-      this.drawerMode = "side";
-      if (!this.sideBarOpen) {
-        this.sideBarOpen = true;
-      }
-    }
+  onResize(width: number): void {
+    const isDesktopView = width >= this.desktopViewWidth;
+    this.drawerMode = isDesktopView ? "side" : "over";
+    this.sideBarOpen = isDesktopView || this.sideBarOpen;
   }
 
   constructor() {}
