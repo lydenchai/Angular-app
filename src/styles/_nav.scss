@@ -1,12 +1,11 @@
 mat-drawer {
-  // margin: 10px;
+  margin: 10px;
   width: 250px;
   border-right: none;
   background: #3f51b5 !important;
-  color: white;
-  // border-radius: 10px;
+  color: white !important;
+  border-radius: 10px;
   padding: 16px;
-  // text-align: center;
 }
 
 mat-drawer-container {
@@ -21,7 +20,7 @@ mat-drawer-content {
 }
 
 .content {
-  // border-radius: 10px;
+  border-radius: 10px;
   color: #484848;
 
   &::-webkit-scrollbar {
@@ -46,14 +45,15 @@ mat-drawer-content {
   overflow: hidden;
 }
 
-// .nav-margin {
-//   margin: 10px 10px 0 0;
-// }
+.nav-margin {
+  margin: 10px;
+  border-radius: 10px;
+}
 
 .content-margin {
   overflow-x: hidden;
   flex: 1;
-  margin: 10px;
+  margin: 0 0 0 20px;
   position: relative;
 }
 

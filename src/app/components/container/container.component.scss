@@ -49,7 +49,7 @@
 }
 
 .mat-list-item {
-  color: #ffffff !important;
+  color: #000000 !important;
   font-size: 0.8rem;
   height: 44px !important;
   margin-bottom: 4px;
@@ -64,7 +64,7 @@
   position: relative;
   background: rgba(255, 255, 255, 0.443) !important;
   border-radius: 0.8rem;
-  color: #ffffff !important;
+  color: #000000 !important;
 
   &::after {
     content: "";
@@ -84,6 +84,7 @@
   background: none;
   box-shadow: none;
   border-radius: 1rem;
+  color: #000;
 
   &hover {
     background: none;
@@ -95,7 +96,7 @@
 }
 
 .expanel-item {
-  color: #ffffff !important;
+  color: #000000 !important;
   font-size: 0.8rem;
   height: 44px !important;
   margin-bottom: 4px;
@@ -103,7 +104,7 @@
 }
 
 ::ng-deep .mat-expansion-indicator::after {
-  color: #ffffff;
+  color: #000000;
 }
 
 ::ng-deep .mat-expansion-panel-body {
@@ -111,7 +112,7 @@
 }
 
 mat-toolbar-row {
-  background-color: white;
+  background-color: #ffffff;
   font-size: 14px;
   height: 54px !important;
 }

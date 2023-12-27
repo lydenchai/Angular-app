@@ -24,11 +24,23 @@
       display: flex;
 
       .dot {
-        width: 10px;
-        height: 10px;
+        width: 13px;
+        height: 13px;
         margin-right: 10px;
         border-radius: 50%;
-        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .dot:nth-child(1) {
+        background-color: #f83333;
+      }
+
+      .dot:nth-child(2) {
+        background-color: #fcbd00;
+      }
+
+      .dot:nth-child(3) {
+        background-color: #27d60c;
       }
     }
 

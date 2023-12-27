@@ -44,10 +44,12 @@
     </mat-nav-list>
   </mat-drawer>
   <mat-drawer-content style="overflow-y: hidden">
-    <div class="content nav-margin">
-      <!-- [ngStyle]="{
+    <div
+      class="content nav-margin"
+      [ngStyle]="{
         'margin-left': sideBarOpen && drawerMode == 'side' ? '20px' : ''
-      }" -->
+      }"
+    >
       <mat-toolbar style="position: sticky; z-index: 2">
         <mat-toolbar-row class="justify-content-between">
           <button
